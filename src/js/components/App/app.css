@@ -1,7 +1,10 @@
 .main {
+    margin: 10px auto;
+}
+
+.forms {
+    margin: 20px auto;
     display: flex;
-    justify-content: center;
-    margin: 100px;
-    padding: 100px;
-    border: 1px solid black;
+    flex-direction: row;
+    justify-content: space-between; 
 }

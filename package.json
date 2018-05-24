@@ -29,9 +29,15 @@
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "react-redux": "4.3.0",
-    "react-router": "^2.0.1",
+    "react-router-dom": "^4",
     "redux": "^3.0.4",
     "style-loader": "^0.20.3",
-    "css-loader": "^0.28.11"
+    "css-loader": "^0.28.11",
+    "react-table": "^6",
+    "copy-webpack-plugin": "^4.5.1",
+    "reselect": "^3",
+    "prop-types": "^15.6.1",
+    "redux-api-middleware": "^2.3.0",
+    "react-router-redux": "^4.0.8"
   }
 }

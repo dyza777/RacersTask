@@ -1,0 +1,7 @@
+.racers-table-title {
+    font-weight: bold;
+    font-size: 2em;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}

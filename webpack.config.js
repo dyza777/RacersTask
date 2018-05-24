@@ -1,3 +1,6 @@
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const path = require('path');
+
 module.exports = {
     entry: [
         './src/index.js'
@@ -17,9 +20,19 @@ module.exports = {
                 }
             },
             {
-                test: /\.css/,
+                test: /\.css$/,
+                exclude: /node_modules/,
                 loaders: ['style-loader', 'css-loader'],
-                include: __dirname + '/src'
+            }, {
+                test: /\.css$/,
+                include: /node_modules/,
+                loaders: ['style-loader', 'css-loader'],
+            }, {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                use: [
+                  'url-loader?limit=10000',
+                  'img-loader'
+                ]
             }
         ]
     },
@@ -28,6 +41,7 @@ module.exports = {
     },
     devServer: {
         historyApiFallback: true,
-        contentBase: './'
+        contentBase: './',
+        disableHostCheck: true
 }
 };

@@ -1,0 +1,14 @@
+.add-racer-block {
+    max-width: 30%;
+    min-width: 30%;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.races-add-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
